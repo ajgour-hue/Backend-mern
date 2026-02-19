@@ -5,10 +5,10 @@
 // cluster = storage + processer 
 
 const app = require("./src/app")
-const monggose = require("mongoose")
+const mongoose  = require("mongoose")
 
 function connectToDb(){
-    monggose.connect("mongodb+srv://ajay:LdYvmpUm4DnepuaC@cluster0.d1ny8lk.mongodb.net/day-6").then(()=>{
+    mongoose .connect("mongodb+srv://theajaygour:ajay1234@cluster0.pywps9b.mongodb.net/day-6").then(()=>{
         console.log("connected to the database");
     })
 }
